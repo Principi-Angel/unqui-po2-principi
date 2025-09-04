@@ -6,8 +6,7 @@ import org.junit.jupiter.api.Test;
 
 import java.time.LocalDate;
 
-
-
+import ar.edu.unq.po2.tp2.Contratado;
 import ar.edu.unq.po2.tp2.Empresa;
 import ar.edu.unq.po2.tp2.Estado;
 import ar.edu.unq.po2.tp2.Permanente;
@@ -27,7 +26,8 @@ class EmpresaTest {
 	Temporario juan = new Temporario("Juan", "Av. Siempreviva 742", soltero,
             LocalDate.of(1970, 8, 10), sueldoBasico, LocalDate.of(2025, 12, 31), 15);
 
-
+	Contratado mike = new Contratado("Mike", "Av. Explotación 1776", soltero,
+            LocalDate.of(2005, 3, 10), sueldoBasico, 0001, "Efectivo");
 	@BeforeEach
 	void setUp() throws Exception {
 		
@@ -45,5 +45,14 @@ class EmpresaTest {
 		assertEquals(1700, empresa.totalSueldosBrutos());
         assertEquals(1240, empresa.totalSueldosNetos());
 	}
-
+	
+	@Test
+	void test2() {
+		assertEquals(0, empresa.totalSueldosBrutos());
+        assertEquals(0, empresa.totalSueldosBrutos());
+		empresa.agregarEmpleado(mike);
+		assertEquals(100, empresa.totalSueldosBrutos());
+        assertEquals(50, empresa.totalSueldosNetos());
+        
+	}
 }

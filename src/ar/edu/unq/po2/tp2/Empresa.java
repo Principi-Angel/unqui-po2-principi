@@ -14,8 +14,8 @@ public class Empresa {
 	        this.cuit = cuit;
 	    }
 
-	    public void agregarEmpleado(Empleado e) {
-	        empleados.add(e);
+	    public void agregarEmpleado(Empleado empleado) {
+	        empleados.add(empleado);
 	    }
 
 	    public float totalSueldosNetos() {

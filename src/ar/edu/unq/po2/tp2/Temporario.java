@@ -3,7 +3,7 @@ package ar.edu.unq.po2.tp2;
 import java.time.LocalDate;
 
 
-public class Temporario extends Empleado {
+public class Temporario extends Planta {
 	private LocalDate fechaFinDesignacion;
 	private int cantHorasExtras;
 	

@@ -31,25 +31,9 @@ public abstract class Empleado {
 		return this.sueldoBruto() - this.montoRetenciones();
 	}
 	
-	public float montoRetenciones() {
-		return this.retencionPorObraSocial() + this.retencionPorAportes();
-	}
 	
-	protected float retencionPorObraSocial() {
-		return this.montoObraSocial() + this.extraObraSocial();
-	}
+	public abstract float montoRetenciones();
 	
-	protected float retencionPorAportes() {
-		return this.montoAportes() + this.extraAportes();
-	}
-	
-	protected float montoObraSocial() {
-		return (float) (0.1 * this.sueldoBruto());
-	}
-	
-	protected abstract float extraObraSocial();
-	protected abstract float montoAportes();
-	protected abstract float extraAportes();
 	
 	protected boolean tieneConyuge() {
 		return estadoCivil.getTieneConyuge();
@@ -69,9 +53,6 @@ public abstract class Empleado {
 		return "SueldoBasico: " + sueldoBasico;
 	}
 	
-	protected String conceptosRetenciones() {
-		return "Obra Social: " + this.retencionPorObraSocial() +
-				"Aportes Jubilatorios: " + this.retencionPorAportes();
-	}
+	protected abstract String conceptosRetenciones();
 }
 

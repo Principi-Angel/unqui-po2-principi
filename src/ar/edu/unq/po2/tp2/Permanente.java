@@ -3,7 +3,7 @@ package ar.edu.unq.po2.tp2;
 import java.time.LocalDate;
 
 
-public class Permanente extends Empleado{
+public class Permanente extends Planta{
 	private int cantHijos;
 	private int antiguedad; // en años
 	public Permanente(String nombre, String direccion, Estado estadoCivil, LocalDate fechaNacimiento, float sueldoBasico,
