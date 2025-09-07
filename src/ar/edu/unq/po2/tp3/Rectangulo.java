@@ -14,20 +14,30 @@ public class Rectangulo {
 	}
 	
 	public int area() {
-		return base * altura;
+		return this.getBase() * this.getAltura();
 	}
 	
 	public int perimetro() {
-		return (altura + base) * 2;
+		return (this.getAltura() + this.getBase()) * 2;
 	}
 	
 	public boolean esHorizontal() {
-        return base > altura;
+        return this.getBase() > this.getAltura();
     }
 
     public boolean esVertical() {
-        return altura > base;
+        return this.getAltura() > this.getBase();
     }
+
+	public int getBase() {
+		return base;
+	}
+
+	public int getAltura() {
+		return altura;
+	}
+    
+    
 	
 	
 }
