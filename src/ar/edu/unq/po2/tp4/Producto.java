@@ -26,7 +26,7 @@ public class Producto {
 	}
 
 	public Boolean esPrecioCuidado() {
-		return esPrecioCuidado ;
+		return esPrecioCuidado;
 	}
 
 	public void aumentarPrecio(double aumento) {

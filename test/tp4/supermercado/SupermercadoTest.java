@@ -1,4 +1,4 @@
-package supermercado;
+package tp4.supermercado;
 
 
 import org.junit.jupiter.api.BeforeEach;

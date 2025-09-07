@@ -1,4 +1,4 @@
-package supermercado;
+package tp4.supermercado;
 import static org.junit.jupiter.api.Assertions.*;
 
 import org.junit.jupiter.api.Test;
