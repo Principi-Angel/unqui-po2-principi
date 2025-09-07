@@ -1,5 +1,6 @@
 package ar.edu.unq.po2.tp3;
 
+import java.time.LocalDate;
 import java.util.Date;
 import java.util.HashSet;
 import java.util.Set;
@@ -37,9 +38,9 @@ public class EquipoDeTrabajo {
 	
 	
 	
-	class Integrante extends Persona {
+	public class Integrante extends Persona {
 		private String apellido;
-		public Integrante(String nombre, String apellido, Date fechaNacimiento){
+		public Integrante(String nombre, String apellido, LocalDate fechaNacimiento){
 			super(nombre, fechaNacimiento);
 			this.apellido = apellido;
 		}
