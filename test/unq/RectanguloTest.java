@@ -40,9 +40,4 @@ class RectanguloTest {
 		assertFalse(c.esHorizontal());
 		assertFalse(c.esVertical());
 	}
-	
-	
-	
-	
-
 }
