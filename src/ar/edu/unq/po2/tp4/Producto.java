@@ -4,7 +4,7 @@ import java.util.function.BooleanSupplier;
 
 public class Producto {
 	private String nombre;
-	private double precio;
+	private Double precio;
 	private boolean esPrecioCuidado;
 	
 	public Producto(String nombre, Double precio, boolean esPrecioCuidado) {
