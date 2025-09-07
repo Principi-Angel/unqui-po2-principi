@@ -1,0 +1,33 @@
+
+
+## 4
+ 
+ s.length() = 3;
+ t.length() ERROR, t solo fue declara pero no inicializada;
+ 1 + a = "1abc";
+ a.toUpperCase() = "ABC";
+ "Libertad".indexOf("r") = 5;
+ "Universidad".lastIndexOf('i') = 8;
+ "Quilmes".substring(2,4) = "uil;
+ (a.length() + a).startsWith("a") = False -> 3 + a = "3abc".startsWith("a") es false;
+ s == a = true -> mismas referencias, mismo objeto;
+ a.substring(1,3).equals("bc") = true;
+ 
+ ## 5
+ 
+ 1. ¿Qué son los tipos de datos primitivos?
+ En Java, los tipos de datos que vienen incorporados en el lenguaje y se llaman por un término reservado.
+ Son más eficientes en términos de memoria y rendimiento, y se usan para representar valores simples como números, caracteres y booleanos.
+ 
+ 2. ¿Cuál es la diferencia entre un int y un Integer?
+ int es in tipo de dato primitivo de java mientras que Integer es una clase wrapper ("envoltorio") y como toda clase se le puede enviar mensajes,
+ cosa que al tipo int no, esto permite ampliar las operaciones que se pueden realizar, a costa de rendimiento.
+ 
+ 3. ¿Si se define una variable de instancia de tipo int cual sería su valor predeterminado? ¿Y si se define una de tipo Integer? 
+ Haga la prueba en Eclipse.
+ Al tipo int le asigna 0 y al tipo Integer null.
+
+ 
+ 4. Responder la pregunta del punto anterior (3), pero ahora en lugar de definir una variable de instancia se define una variable de método.
+ 
+ Ocurre un error al momento de compilar aunque se puede forzar. 

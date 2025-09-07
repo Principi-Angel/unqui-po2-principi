@@ -113,11 +113,4 @@ class CounterTestCase {
 	public void throwsException_highestMultipleOf() {
 		assertThrows(RuntimeException.class, () -> counter.highestMultipleOf(100, -1));
 	}
-	
-	
-	
-	
-	 
-	 
-	 
 }
