@@ -17,7 +17,7 @@ public class Producto {
 		this(nombre, precio, false);
 	}
 
-	public Object getNombre() {
+	public String getNombre() {
 		return nombre;
 	}
 
