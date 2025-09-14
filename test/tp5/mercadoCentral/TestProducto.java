@@ -17,6 +17,7 @@ class TestProducto {
 		aceite = new ProductoTradicional(15f, 15);
 		galletitas = new ProductoCooperativa(6f, 8);
 	}
+	
 	@Test
 	void test() {
 		fail("Not yet implemented");

@@ -1,7 +1,5 @@
 package ar.edu.unq.po2.tp5.cajaMercadoCentral;
 
-import java.util.ArrayList;
-
 public class Sistema { 
 	
 	public void registrarProductos(Cliente cliente) {
