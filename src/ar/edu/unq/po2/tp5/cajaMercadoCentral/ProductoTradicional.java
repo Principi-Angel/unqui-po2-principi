@@ -1,23 +1,28 @@
 package ar.edu.unq.po2.tp5.cajaMercadoCentral;
 
 public class ProductoTradicional {
-	private float precio;
+	private Double precio;
 	private int stock;
 	
-	public ProductoTradicional(float precio, int stock) {
+	public ProductoTradicional(Double precio, int stock) {
 		this.precio = precio;	
 		this.stock = stock;
 	}
 	
-	public float getPrecio() {
+	public Double getPrecio() {
 		return precio;
 	}
 	
-	public boolean tieneStock() {
-		return stock > 1;
+	protected boolean tieneStock() {
+		return stock > 0;
 	}
-	
-	public void decrementarStock() {
-		stock--;
-	}
+		
+	public void registrar(Cliente cliente) {
+		if(this.tieneStock()) {
+			cliente.sumarMontoProducto(this.getPrecio());
+			stock--;
+		} else {
+			cliente.sumarMontoProducto(0d);
+		}
+	}	
 }

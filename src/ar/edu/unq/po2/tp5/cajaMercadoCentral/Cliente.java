@@ -3,7 +3,7 @@ import java.util.ArrayList;
 
 public class Cliente {
 	ArrayList<ProductoTradicional> productos = new ArrayList<ProductoTradicional>();
-	private float montoAPagar = 0;
+	private Double montoAPagar = 0d;
 	
 	public void agregarProducto(ProductoTradicional producto) {
 		productos.add(producto);
@@ -13,16 +13,22 @@ public class Cliente {
 		sistema.registrarProductos(this);
 	}
 	
-	public void setMontoAPagar(float montoAPagar) {
-		this.montoAPagar = montoAPagar;
-	}
-	
-	public float getMontoAPagar() {
+	public Double getMontoAPagar() {
 		return montoAPagar;
 	}
 	
 	public ArrayList<ProductoTradicional> productos(){
 		return productos;
 	}
-
+	
+	public void registrarProductos() { 
+		for(ProductoTradicional producto : productos) {
+			producto.registrar(this);
+		}
+	}
+	
+	public void sumarMontoProducto(Double montoProducto) {
+		montoAPagar += montoProducto;
+	}
+	
 }
