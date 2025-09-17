@@ -24,11 +24,11 @@ class mercadoCentralTest {
 		atun = new ProductoTradicional(20d, 0);
 		galletitas = new ProductoCooperativa(5d, 8); // 4.5f
 		crema = new ProductoCooperativa(20d, 1); // 18f
-		pepe.agregarProducto(aceite);
+	/*	pepe.agregarProducto(aceite);
 		pepe.agregarProducto(atun);
 		pepe.agregarProducto(galletitas);
 		pepe.agregarProducto(crema);
-		pepe.registrarProductos(sistema);
+		pepe.registrarProductos(sistema);*/
 	}
 
 	@Test

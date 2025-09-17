@@ -8,7 +8,7 @@ public class ProductoCooperativa extends ProductoTradicional {
 	}
 
 	@Override
-	public Double getPrecio() {
-		return super.getPrecio() * ((100d-descuento)/100d);
+	public Double getValor() {
+		return super.getValor() * ((100d-descuento)/100d);
 	}
 }
