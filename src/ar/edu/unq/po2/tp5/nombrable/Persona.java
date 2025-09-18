@@ -1,4 +1,4 @@
-package ar.edu.unq.po2.tp5.Nombrable;
+package ar.edu.unq.po2.tp5.nombrable;
 
 import java.time.LocalDate;
 import java.time.Period;

@@ -1,4 +1,4 @@
-package ar.edu.unq.po2.tp5.Nombrable;
+package ar.edu.unq.po2.tp5.nombrable;
 
 public class Mascota implements Nombrable {
 	private String name;
