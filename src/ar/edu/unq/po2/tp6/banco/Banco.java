@@ -10,7 +10,13 @@ public class Banco {
 		clientes.add(cliente);
 	}
 	
-	public void solicitarCredito(Cliente cliente, Double monto, int cuotas) {
-		
+	public void solicitarCredito(SolicitudDeCredito solicitud) {
+		if(solicitud.esAceptada()) {
+			this.otorgar(solicitud.getCliente(), solicitud.getMonto());
+		}
+	}
+	
+	protected void otorgar(Cliente cliente, Double monto) {
+		cliente.recibir(monto);
 	}
 }
