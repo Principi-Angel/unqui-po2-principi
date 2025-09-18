@@ -9,7 +9,7 @@ public class Sistema {
 		items.add(item);
 	}
 	
-	public void registrarProductos(Cliente cliente) {
+	public void registrarItems(Cliente cliente) {
 		Double montoAPagar = 0d;
 		for(Item item : items) {
 			montoAPagar += item.getValor();

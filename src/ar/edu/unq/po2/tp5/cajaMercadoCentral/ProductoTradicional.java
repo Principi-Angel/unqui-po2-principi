@@ -10,7 +10,11 @@ public class ProductoTradicional implements Item {
 	}
 	
 	public Double getValor() {
-		return valor;
+		if(this.tieneStock()) {
+			return valor;
+		} else {
+			return 0d;
+		}
 	}
 	
 	protected boolean tieneStock() {

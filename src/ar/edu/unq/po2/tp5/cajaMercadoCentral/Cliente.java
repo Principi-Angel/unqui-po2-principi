@@ -16,5 +16,4 @@ public class Cliente {
 	public void pagarMonto(Double montoAPagar) {
 		this.montoAPagar = montoAPagar;
 	}
-	
 }

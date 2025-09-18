@@ -2,6 +2,7 @@ package tp5.mercadoCentral;
 
 import static org.junit.jupiter.api.Assertions.*;
 
+
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
@@ -24,11 +25,11 @@ class mercadoCentralTest {
 		atun = new ProductoTradicional(20d, 0);
 		galletitas = new ProductoCooperativa(5d, 8); // 4.5f
 		crema = new ProductoCooperativa(20d, 1); // 18f
-	/*	pepe.agregarProducto(aceite);
-		pepe.agregarProducto(atun);
-		pepe.agregarProducto(galletitas);
-		pepe.agregarProducto(crema);
-		pepe.registrarProductos(sistema);*/
+		sistema.agregarItem(aceite);
+		sistema.agregarItem(atun);
+		sistema.agregarItem(galletitas);
+		sistema.agregarItem(crema);
+		sistema.registrarItems(pepe);
 	}
 
 	@Test
