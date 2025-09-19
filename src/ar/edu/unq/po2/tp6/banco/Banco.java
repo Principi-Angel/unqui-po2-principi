@@ -5,18 +5,24 @@ import java.util.Set;
 
 public class Banco {
 	private Set<Cliente> clientes = new HashSet<Cliente>();
+	private Set<SolicitudDeCredito> solicitudesDeCredito = new HashSet<SolicitudDeCredito>();
 	
 	public void agregarCliente(Cliente cliente) {
 		clientes.add(cliente);
 	}
 	
-	public void solicitarCredito(SolicitudDeCredito solicitud) {
-		if(solicitud.esAceptada()) {
-			this.otorgar(solicitud.getCliente(), solicitud.getMonto());
-		}
+	public void registrarCredito(SolicitudDeCredito solicitud) {
+		solicitudesDeCredito.add(solicitud);
+		
 	}
 	
-	protected void otorgar(Cliente cliente, Double monto) {
-		cliente.recibir(monto);
+	public Double montoTotalCreditosAceptables() {
+		Double total = 0d;
+		for(SolicitudDeCredito solicitud : solicitudesDeCredito) {
+			if(solicitud.esAceptada()) {
+				total += solicitud.getMonto();
+			}
+		}
+		return total;
 	}
 }

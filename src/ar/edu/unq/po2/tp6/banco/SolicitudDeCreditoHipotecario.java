@@ -11,15 +11,16 @@ public class SolicitudDeCreditoHipotecario extends SolicitudDeCredito {
 		return super.esAceptada() && this.cumpleEdad(this.getCliente()) && this.cumpleGarantia(this.getCliente());
 	}
 
-	private boolean cumpleGarantia(Cliente cliente) {
-		return cliente.garantia().valorFiscal() >= (cliente.garantia().valorFiscal() * this.porcentajeGarantiaAceptacion());
+	protected boolean cumpleGarantia(Cliente cliente) {
+		Double valorFiscal = cliente.getPropiedad().valorFiscal();
+		return valorFiscal >= (valorFiscal * this.porcentajeGarantiaAceptacion());
 	}
 
-	private Double porcentajeGarantiaAceptacion() {
+	protected Double porcentajeGarantiaAceptacion() {
 		return 0.7d;
 	}
 
-	private boolean cumpleEdad(Cliente cliente) {
+	protected boolean cumpleEdad(Cliente cliente) {
 		return this.edadTerminoCredito(cliente, this.getCuotas()) < 65;
 	}
 
@@ -31,7 +32,4 @@ public class SolicitudDeCreditoHipotecario extends SolicitudDeCredito {
 	protected Double porcentajeSueldoAceptacion() {
 		return 0.5d;
 	}
-	
-	
-	
 }

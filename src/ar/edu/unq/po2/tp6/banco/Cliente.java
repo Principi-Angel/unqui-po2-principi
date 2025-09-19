@@ -6,11 +6,9 @@ public class Cliente {
 	private String direccion;
 	private int edad;
 	private Double sueldoNetoMensual;
-	private Banco banco;
 	private Propiedad propiedad;
-	private Double saldoEnCuenta;
 	
-	public Double getSueldoNetoAnual() {
+	public Double getSueldoAnual() {
 		return sueldoNetoMensual * 12;
 	}
 	
@@ -18,19 +16,11 @@ public class Cliente {
 		return sueldoNetoMensual;
 	}
 
-	public Propiedad garantia() {
+	public Propiedad getPropiedad() {
 		return propiedad;
 	}
 	
 	public int getEdad() {
 		return edad;
-	}
-
-	public void recibir(Double monto) {
-		saldoEnCuenta += monto;
-	}
-	
-	public Double getSaldoEnCuenta() {
-		return saldoEnCuenta;
 	}
 }

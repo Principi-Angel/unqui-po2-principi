@@ -16,7 +16,7 @@ public class SolicitudCreditoPersonal extends SolicitudDeCredito {
 	}
 	
 	protected boolean cumpleConIngresoAnual(Cliente cliente) {
-		return cliente.getSueldoNetoAnual() >= this.sueldoMinimoParaSerAceptada();
+		return cliente.getSueldoAnual() >= this.sueldoMinimoParaSerAceptada();
 	}
 	
 	protected Double sueldoMinimoParaSerAceptada() {

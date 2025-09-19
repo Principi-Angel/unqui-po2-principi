@@ -14,7 +14,6 @@ public abstract class SolicitudDeCredito implements Solicitud {
 	protected abstract Double porcentajeSueldoAceptacion();
 	
 	public boolean esAceptada() {
-		Cliente cliente = this.getCliente();
 		return this.esCuotaMenorSueldo(cliente);
 	}
 	
@@ -37,7 +36,4 @@ public abstract class SolicitudDeCredito implements Solicitud {
 	public Double getMonto() {
 		return monto;
 	}
-	
-	
-	
 }
