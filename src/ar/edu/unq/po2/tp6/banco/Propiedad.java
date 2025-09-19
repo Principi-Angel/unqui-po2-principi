@@ -5,6 +5,4 @@ public interface Propiedad {
 	public Double valorFiscal();
 	public String descripcion();
 	public String direccion();
-
-
 }

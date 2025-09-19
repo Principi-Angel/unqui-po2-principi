@@ -13,7 +13,6 @@ public class Banco {
 	
 	public void registrarCredito(SolicitudDeCredito solicitud) {
 		solicitudesDeCredito.add(solicitud);
-		
 	}
 	
 	public Double montoTotalCreditosAceptables() {
