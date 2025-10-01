@@ -22,5 +22,4 @@ class CorreoTest {
 	void test() {
 		assertEquals(destinatario, correo.getDestinatario());
 	}
-
 }
