@@ -55,11 +55,11 @@ public class ClienteEMail {
  * VIOLACIONES PRINCIPIOS SOLID
  *  - clase ClienteEMail
  *  - no respeta el ppio de Responsabilidad Única ya que la clase cliente tiene lógica de negocio de la clase ServidorPop.
- *  - tiene variables de clase publicas, esto estría violando los principios ya que
+ *  - tiene variables de clase publicas, esto estaría violando los principios ya que
  *  de esta manera se pueden acceder a estas con facilidad y poder cambiar cosas que tal vez no deberían ser cambiadas.
  *  - ppio O/C -> al definir la variable servidor como ServidorPop ya que esto complica la posible extensión del código,
  *  y si en el futuro se desease cambiar el tipo de servidor se debería acceder y modificar código.
- *  - lo mismo ocrrure con inbox y borrados que son del tipo ArrayList<Correo> cuando hubiese sido mejor que sean del tipo
+ *  - lo mismo ocurre con inbox y borrados que son del tipo ArrayList<Correo> cuando hubiese sido mejor que sean del tipo
  *  List ya que esto permitiría cambiar el tipo de lista.
  *  - el constructor invoca a un método, en todo caso el usuario que instancie la clase es quien debería poder enviarle mensajes.
  *  
