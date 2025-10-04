@@ -10,18 +10,28 @@ import org.junit.jupiter.api.Test;
 import static org.mockito.Mockito.*;
 
 class PokerStatusTest {
-
-	@BeforeAll
-	static void setUpBeforeClass() throws Exception {
-	}
-
+	
+	PokerStatus pokerStatus;
+	
 	@BeforeEach
 	void setUp() throws Exception {
+		pokerStatus = new PokerStatus();
 	}
 
 	@Test
-	void test() {
-		fail("Not yet implemented");
+	void testTresCartasMismoValor() {
+		assertFalse(pokerStatus.verificar("1P","2C","1D","1T", "QT"));
 	}
-
+	
+	void testCincoCartasMismoValor() {
+		assertFalse(pokerStatus.verificar("KP","KC","KD","KT", "KP"));
+	}
+	
+	void testNingunaCartaMismoValor() {
+		assertFalse(pokerStatus.verificar("10P","KC","QD","9T", "JP"));
+	}
+	
+	void testHayPoker() {
+		assertTrue(pokerStatus.verificar("QP","QC","QD","QT", "KP"));
+	}
 }
