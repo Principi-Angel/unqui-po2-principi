@@ -5,3 +5,4 @@ public class CartaDeTreboles extends Carta {
 		super(Palo.Treboles, valor);
 	}
 }
+
