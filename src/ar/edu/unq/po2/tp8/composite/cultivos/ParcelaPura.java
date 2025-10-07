@@ -1,9 +1,14 @@
 package ar.edu.unq.po2.tp8.composite.cultivos;
 
 public class ParcelaPura extends Parcela {
+	private Cultivo cultivo;
 
 	public ParcelaPura(Cultivo cultivo) {
-		super(cultivo);
+		this.cultivo = cultivo;
+	}
+	
+	private Cultivo getCultivo() {
+		return cultivo;
 	}
 	
 	@Override

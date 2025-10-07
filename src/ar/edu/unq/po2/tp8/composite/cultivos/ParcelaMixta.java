@@ -2,10 +2,6 @@ package ar.edu.unq.po2.tp8.composite.cultivos;
 
 public class ParcelaMixta extends Parcela {
 
-	public ParcelaMixta(Cultivo cultivo) {
-		super(cultivo);
-	}
-
 	@Override
 	public Double getGanancia() {
 		return getParcelasH().stream()
