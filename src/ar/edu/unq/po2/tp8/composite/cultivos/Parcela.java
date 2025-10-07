@@ -18,9 +18,7 @@ public abstract class Parcela {
 		return cultivo;
 	}
 	
-	public void agregarParcela(Parcela parcela) throws Exception {
-		
-	}
+	public abstract void agregarParcela(Parcela parcela) throws Exception;
 	
 	public Parcela getPadre() {
         return padre;
