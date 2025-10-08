@@ -11,6 +11,7 @@ public abstract class Personaje {
 	public abstract void caminar();
 	
 	protected List<Personaje> getPersonajesH(){
+		return personajesH;
 	}
 	
 	protected void setPadre(Personaje padre){

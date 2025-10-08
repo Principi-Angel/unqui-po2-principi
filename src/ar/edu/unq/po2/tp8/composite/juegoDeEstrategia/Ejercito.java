@@ -11,6 +11,7 @@ public class Ejercito extends Personaje{
 			personaje.setPadre(this);
 			this.getPersonajesH().add(personaje);
 		} else {
+			throw new Exception("Personaje singular.");
 		}
 	}
 

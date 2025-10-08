@@ -1,6 +1,7 @@
 package ar.edu.unq.po2.tp8.composite.juegoDeEstrategia;
 
 import java.util.HashSet;
+import java.util.List;
 import java.util.Set;
 
 public class Ingeniero extends PersonajeSingular {
