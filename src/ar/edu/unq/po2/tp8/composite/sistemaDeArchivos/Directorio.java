@@ -1,4 +1,4 @@
-package ar.edu.unq.po2.tp8.sistemaDeArchivos;
+package ar.edu.unq.po2.tp8.composite.sistemaDeArchivos;
 
 import java.time.LocalDate;
 import java.util.Comparator;
