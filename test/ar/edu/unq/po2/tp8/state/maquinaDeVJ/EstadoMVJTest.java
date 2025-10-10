@@ -7,13 +7,18 @@ import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
 class EstadoMVJTest {
-
-	@BeforeAll
-	static void setUpBeforeClass() throws Exception {
-	}
-
+	
+	EstadoMVJ apagada;
+	EstadoMVJ encendida;
+	EstadoMVJ unJugador;
+	EstadoMVJ dosJugadores;
+	MaquinaDeVJ maquina;
+	
 	@BeforeEach
 	void setUp() throws Exception {
+		maquina = new MaquinaDeVJ();
+		apagada = new Apagada(maquina, encendida);
+		encendida = new Encendida(maquina, )
 	}
 
 	@Test

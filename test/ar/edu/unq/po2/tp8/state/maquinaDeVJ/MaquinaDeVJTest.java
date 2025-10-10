@@ -8,17 +8,21 @@ import org.junit.jupiter.api.Test;
 
 class MaquinaDeVJTest {
 
-	@BeforeAll
-	static void setUpBeforeClass() throws Exception {
-	}
+	MaquinaDeVJ maquina;
 
 	@BeforeEach
 	void setUp() throws Exception {
+		maquina = new MaquinaDeVJ();
 	}
 
 	@Test
-	void test() {
-		fail("Not yet implemented");
+	void testEnciende() {
+		maquina.encender();
 	}
+	
+	
+	
+	
+	
 
 }
