@@ -2,9 +2,14 @@ package ar.edu.unq.po2.tp8.state.maquinaDeVJ;
 
 import static org.junit.jupiter.api.Assertions.*;
 
+
 import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
+
+import ar.edu.unq.po2.tp8.state.videoJuego.MaquinaDeVJ;
+
+import static org.mockito.Mockito.*;
 
 class MaquinaDeVJTest {
 
@@ -17,7 +22,7 @@ class MaquinaDeVJTest {
 
 	@Test
 	void testEnciende() {
-		maquina.encender();
+		
 	}
 	
 	

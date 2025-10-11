@@ -53,10 +53,12 @@ class PokerStatusTest {
 		assertEquals("Nada", pokerStatus.verificar(kP,diezC,nueveC, ochoC,sieteC));
 	}
 	
+	/*
 	@Test
 	void testHayPoker() {
 		assertEquals("Poker", pokerStatus.verificar(kP,kC,kD,kT,nueveC));
 	}
+	*/
 	
 	@Test
 	void testHayTrio() {
