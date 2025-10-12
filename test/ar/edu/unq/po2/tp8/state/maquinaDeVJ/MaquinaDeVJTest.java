@@ -3,6 +3,7 @@ package ar.edu.unq.po2.tp8.state.maquinaDeVJ;
 import static org.junit.jupiter.api.Assertions.*;
 
 
+
 import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;

@@ -39,8 +39,9 @@ class EstadoMVJTest {
 
 	@Test
 	void testPasaDeApagadaAEncendida() {
+		EstadoMVJ encendidaMock = mock(Encendida.class);
 		this.apagada.recibirSeñalBoton();
-		verifyNoMoreInteractions(maquina);
+		verify(maquina, times(1)).setEstado(encendidaMock);
 	}
 
 }
