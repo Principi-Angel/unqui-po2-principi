@@ -47,6 +47,4 @@ class ReproductorTest {
 		reproductor.pause();
 		verify(song, never()).pause();
 	}
-	
-	
 }
